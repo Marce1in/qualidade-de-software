@@ -1,11 +1,3 @@
-# Centro Universitário Senac-RS
-
-**ADS - Análise e Desenvolvimento de Sistemas / SPI - Sistemas para Internet**
-**Unidade Curricular:** Qualidade de Software
-**Prof.:** Luciano Zanuz
-
----
-
 # 🧩 Atividade PBL – Aula 9
 
 ## Testes Unitários Automatizados e TDD – LocalEats
@@ -23,13 +15,19 @@
 ```python
 .
 ├── src/
-│   ├── pedido.py
-│   ├── desconto.py
-│   └── entrega.py
-└── tests/
-    ├── test_pedido.py
-    ├── test_desconto.py
-    └── test_entrega.py
+│   └── aula-09-testes-unitarios-tdd/
+│       ├── pyproject.toml
+│       ├── uv.lock
+│       ├── localeats/
+│       │   ├── pedido.py
+│       │   ├── desconto.py
+│       │   └── entrega.py
+│       └── tests/
+│           ├── test_pedido.py
+│           ├── test_desconto.py
+│           └── test_entrega.py
+└── docs/
+    └── aula-09-testes-unitarios-tdd.md
 ```
 
 ---
@@ -371,16 +369,32 @@ Ao longo do desenvolvimento, o código passou por melhorias com foco em qualidad
 
 ## 🔹 5. Execução dos Testes
 
-📊 Resultado:
+### ▶️ Comando
 
+```bash
+cd src/aula-09-testes-unitarios-tdd
+uv sync
+uv run pytest
 ```
-13 passed in 0.09s
-```
-Os testes foram executados com pytest no ambiente local.
+
+### 📊 Resultado
+
+Os testes foram executados com `pytest` no ambiente local.
 
 * Total de testes: 13
 * Aprovados: 13
 * Reprovados: 0
+
+### 📸 Evidência
+
+Print da execução local do comando:
+
+```bash
+cd src/aula-09-testes-unitarios-tdd
+uv run pytest
+```
+
+![Execução dos testes unitários do PBL 6](../artefatos/evidencias/aula-09-execucao-pytest.png)
 
 ---
 

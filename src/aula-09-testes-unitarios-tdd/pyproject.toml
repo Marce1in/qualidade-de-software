@@ -1,0 +1,12 @@
+[project]
+name = "aula-09-testes-unitarios-tdd"
+version = "0.1.0"
+description = "Regras de negocio do LocalEats validadas com testes unitarios e TDD."
+requires-python = ">=3.11"
+dependencies = [
+    "pytest>=8.0.0",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
