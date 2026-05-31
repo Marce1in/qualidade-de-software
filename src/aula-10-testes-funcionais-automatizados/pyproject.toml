@@ -1,0 +1,13 @@
+[project]
+name = "aula-10-testes-funcionais-automatizados"
+version = "0.1.0"
+description = "Testes funcionais automatizados do LocalEats com Playwright e Pytest."
+requires-python = ">=3.11"
+dependencies = [
+    "playwright>=1.50.0",
+    "pytest>=8.0.0",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
