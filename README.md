@@ -9,6 +9,7 @@ Este repositório reúne as atividades desenvolvidas na disciplina de Qualidade 
 ## 📚 Organização
 - `docs/` → Documentos das atividades PBL em Markdown
 - `artefatos/evidencias/` → Prints, logs e evidências de execução
+- `artefatos/diagramas/` → Diagramas usados nas atividades
 - `src/aula-XX-nome-da-atividade/` → Implementações e testes automatizados por PBL, quando houver
 
 ## 📦 Entregas
