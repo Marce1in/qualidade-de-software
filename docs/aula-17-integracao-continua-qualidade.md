@@ -129,7 +129,7 @@ uv run pytest -v
 | Nome do workflow | `Quality Pipeline` |
 | Evento que dispara a execução | `push` e `pull_request` na branch `main` |
 | Link para o arquivo do workflow | https://github.com/Marce1in/qualidade-de-software/blob/main/.github/workflows/quality.yml |
-| Link de uma execução do workflow | Será gerado após o primeiro `push` com o workflow para o GitHub |
+| Link de uma execução do workflow | https://github.com/Marce1in/qualidade-de-software/actions/runs/28716744717 |
 
 ### Código do workflow (`.github/workflows/quality.yml`)
 
@@ -177,13 +177,15 @@ jobs:
 | Quantidade de testes executados | 7 |
 | Quantidade de testes aprovados | 7 |
 | Quantidade de testes com falha | 0 |
-| Status final do pipeline | Pendente de execução no GitHub Actions após push |
+| Status final do pipeline | Aprovado no GitHub Actions |
 
 ---
 
 ## Evidência da Execução
 
-A execução local foi validada com `uv run pytest -v`. A evidência visual do GitHub Actions deve ser capturada manualmente depois que o workflow rodar no GitHub.
+A execução local foi validada com `uv run pytest -v` e o mesmo conjunto de testes foi executado pelo workflow `Quality Pipeline` no GitHub Actions.
+
+![Execução aprovada do Quality Pipeline no GitHub Actions](../artefatos/evidencias/aula-17-github-actions-quality-pipeline.png)
 
 ---
 
