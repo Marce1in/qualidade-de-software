@@ -1,0 +1,12 @@
+[project]
+name = "aula-17-integracao-continua-qualidade"
+version = "0.1.0"
+description = "Regras de pedido do LocalEats validadas por testes e pipeline de qualidade."
+requires-python = ">=3.11"
+dependencies = [
+    "pytest>=8.0.0",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]

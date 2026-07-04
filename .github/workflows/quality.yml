@@ -1,0 +1,32 @@
+name: Quality Pipeline
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+
+jobs:
+  aula-17-tests:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: src/aula-17-integracao-continua-qualidade
+
+    steps:
+      - name: Checkout do codigo
+        uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Instalar uv
+        uses: astral-sh/setup-uv@v6
+
+      - name: Instalar dependencias
+        run: uv sync --locked
+
+      - name: Executar testes automatizados
+        run: uv run pytest -v
